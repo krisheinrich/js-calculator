@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(170,170,220);
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  color: #ddd;
+  text-shadow: 1px 2px #888;
+}
+
+#display {
+  margin: 30px auto;
+  background-color: #777;
+  color: #eee;
+  height: 610px;
+  padding: 50px 80px;
+  text-align: center;
+  font-size: 54px;
+  border-radius: 16px;
+  font-family: Consolas, Ariel, sans-serif;
+}
+
+#display .inputString {
+  text-align: left;
+}
+
+#display .answerString {
+  text-align: right;
+}
+
+#input-area {
+  margin: 0 auto;
+  width: 688px;
+}
+
+#input-area > * {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+#input-area input {
+  margin: 0 8px;
+  padding: 4px;
+  font-size: 20px;
+}
+
+#input-area button {
+  margin: 0 4px;
+  font-size: 18px;
+  box-shadow:  3px 1px 3px #888888;
+}
+
+#ans-btn {
+  border-radius: 50%;
+}
+
+#info-content {
+  margin: 16px 120px;
+  padding: 14px 34px;
+  background-color: #e2e2e2;
+}
+
+.keyName {
+  font-family: Consolas, monaco, monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+}

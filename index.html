@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body onload="main()">
+    <div class="container">
+      <h1>JavaScript Calculator</h1>
+      <div id="display" class="well"></div>
+      <div id="input-area" class="row">
+        <button class="btn btn-warning col-xs-1" type="button" id="ans-btn" name="answer">Ans</button>
+        <input class="col-xs-6" type="text" id="expression" autofocus placeholder="Enter an expression to evaluate...">
+        <button class="btn btn-primary col-xs-2" type="button" id="eval-btn" name="evaluate">Calc</button>
+        <button class="btn btn-default col-xs-2" type="button" id="clear-btn" name="clear">Clear</button>
+      </div>
+      <div id="info-box">
+        <div id="info-content">
+          <h2>Rules on Input:</h2>
+          <ul>
+            <li>Use four standard arithmetic operations (+, -, *, /) as well as a carat (^) for exponents</li>
+            <li>Use parentheses to specify the order (PEMDAS order of operations are followed by default)</li>
+            <li>Use the <span class="keyName">return</span> key as a shortcut for the 'Calc' button if you like</li>
+            <li>The 'Ans' key appends the last result to the input box</li>
+            <li>If a calculation does not go through, check your browser's console for information on what went wrong -- you may have forgotten a closing parenthesis, input a letter, etc.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
