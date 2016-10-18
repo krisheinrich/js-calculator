@@ -12,7 +12,7 @@ function main() {
     document.getElementById('display').innerHTML = '';
   }
 
-function clearAll() {
+  function clearAll() {
       clearInput();
       clearDisplay();
     }
@@ -140,7 +140,6 @@ function clearAll() {
       clearInput();
 
     } catch (e) {
-      // if (!parenthesesTest) display Error: parentheses must align
       console.log(e);
 
       // Display error to user
@@ -177,5 +176,5 @@ function clearAll() {
   document.getElementById("eval-btn").onclick = calculateAndDisplay;
   document.getElementById("clear-btn").onclick = clearAll;
   document.getElementById("expression").onkeydown = function(){uniKeyCode(event)};
-  
+
 }
