@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body onload="main()">
+    <div class="container">
+      <h1>JavaScript Calculator</h1>
+      <div id="display"></div>
+      <div id="input-area" class="row">
+        <button class="btn btn-danger col-xs-1" type="button" id="ans-btn" name="answer">Ans</button>
+        <input class="col-xs-6" type="text" id="expression" autofocus placeholder="Enter an expression to evaluate...">
+        <button class="btn btn-success col-xs-2" type="button" id="eval-btn" name="evaluate">Go!</button>
+        <button class="btn btn-default col-xs-2" type="button" id="clear-btn" name="clear">Clear</button>
+      </div>
+      <div id="info-box">
+        <div id="info-content">
+          <h2>Rules on Input:</h2>
+          <ul>
+            <li>Use the four standard arithmetic operations (<span class="keyName">+</span>, <span class="keyName">-</span>, <span class="keyName">*</span>, <span class="keyName">/</span>) as well as a carat (<span class="keyName">^</span>) for exponents.
+              <ul>
+                <li><code>-1-1+2*3/4^-0.5</code> --> <em>10</em></li>
+              </ul>
+            </li>
+            <li>This calculator input supports nesting of expressions. Use parentheses to group subexpressions and control
+              the order in which they are calculated. Standard order of operations are followed by default.
+                <ul>
+                  <li><code>(1+6/3)^(9^(2^-1))</code> --> <em>27</em></li>
+                </ul></li>
+
+            <li>The multiplication sign may be omitted between a number an opening parenthesis: <code>6(1-4/3)</code></li>
+            <li>The <strong>ANS</strong> button recalls the last calculated result.</li>
+            <li>Use the <span class="keyName">return</span> key as a shortcut for the <strong>GO</strong> button.</li>
+          </ul>
+          <h3>Other features:</h3>
+          <ul>
+            <li><strong>Input validation:</strong> If your input includes a letter, incorrectly formatted decimals (as in 5.15.4) or mismatched parentheses,
+              or if your answer is undefined, the calculator will display an error message with this information and allow
+              you to make changes to you input.</li>
+              <li>The <strong>ANS</strong> button will skip over any displayed error messages and recall the last numerical output.</li>
+              <li>All displayed answers will be rounded to at most 10 decimal places.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
