@@ -1,37 +1,53 @@
 body {
-  background-color: rgb(170,170,220);
+  background-color: rgb(70,70,70);
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 800;
   color: #ddd;
   text-shadow: 1px 2px #888;
 }
 
 #display {
-  margin: 30px auto;
-  background-color: #777;
+  margin: 30px auto;background-color: rgb(200,200,200);
+  background-color: rgba(200,200,200,0.3);
+  border-style: inset;
+  border-radius: 5px 0 5px 0;
+  border-top: 4px solid #222;
+  border-right: 4px solid #a7a7a7;
+  border-bottom: 4px solid #a7a7a7;
+  border-left: 4px solid #222;
   color: #eee;
-  height: 610px;
+  height: 560px;
   padding: 50px 80px;
   text-align: center;
-  font-size: 54px;
-  border-radius: 16px;
+  font-size: 48px;
   font-family: Consolas, Ariel, sans-serif;
+  overflow: hidden;
 }
 
 #display .inputString {
   text-align: left;
 }
 
-#display .answerString {
+#display .answerString, #display .errorString {
   text-align: right;
+}
+
+#display .errorString code {
+  background-color: transparent;
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: 36px;
 }
 
 #input-area {
   margin: 0 auto;
-  width: 688px;
+  width: 66%;
+  min-width: 750px;
 }
 
 #input-area > * {
@@ -41,25 +57,29 @@ h1 {
 }
 
 #input-area input {
-  margin: 0 8px;
+  margin: 0;
   padding: 4px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #input-area button {
   margin: 0 4px;
-  font-size: 18px;
-  box-shadow:  3px 1px 3px #888888;
-}
-
-#ans-btn {
-  border-radius: 50%;
+  font-size: 16px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  box-shadow:  3px 1px 3px #444;
+  text-transform: uppercase;
 }
 
 #info-content {
-  margin: 16px 120px;
-  padding: 14px 34px;
+  width: 70%;
+  min-width: 450px;
+  margin: 16px auto;
+  padding: 14px 40px;
   background-color: #e2e2e2;
+}
+
+#info-content li {
+  font-family: Ubuntu;
 }
 
 .keyName {
